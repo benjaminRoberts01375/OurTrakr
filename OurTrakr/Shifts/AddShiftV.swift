@@ -15,6 +15,17 @@ struct AddShiftV: View {
     @State private var endTime: Date = Date()
     @State private var allowedShift: Bool = true
     
+    init(job: FetchedResults<Job>.Element) {
+        self._job = ObservedObject(initialValue: job)
+        let date = Date()
+        let calendar = Calendar.current
+        let components = calendar.dateComponents([.year, .month, .day, .hour, .minute], from: date)
+        let roundedDate = calendar.date(from: components) ?? date
+        
+        self._startTime = State(initialValue: roundedDate.addingTimeInterval(-14400))
+        self._endTime = State(initialValue: endTime)
+    }
+    
     var body: some View {
         NavigationStack {
             Form {
