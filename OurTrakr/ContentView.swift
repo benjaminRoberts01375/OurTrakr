@@ -11,6 +11,7 @@ struct ContentView: View {
     @FetchRequest(sortDescriptors: []) var jobs: FetchedResults<Job>
     @Environment(\.managedObjectContext) var moc
     @State var navigationPath = NavigationPath()
+    @State var addingJob: Bool = false
     static let title = "Jobs"
     
     var body: some View {
@@ -26,10 +27,10 @@ struct ContentView: View {
             .navigationDestination(for: Job.self) { JobDetailV(job: $0) }
             .toolbar {
                 Button("Add", systemImage: "plus") {
-                    let job = Job(context: moc)
-                    job.name = "New Job"
+                    addingJob = true
                 }
             }
+            .sheet(isPresented: $addingJob) { AddJobV() }
         }
     }
 }
