@@ -12,6 +12,7 @@ import Foundation
 @objc(Job)
 public class Job: NSManagedObject, Identifiable {
     static let defaultName = "New Job"
+    static let payTypeCount = PayType.allCases.count
     
     var unwrappedName: String {
         get { self.name ?? Job.defaultName }
@@ -25,15 +26,16 @@ public class Job: NSManagedObject, Identifiable {
     var payType: PayType {
         get { PayType(rawValue: Int(self.storedPayType)) ?? .hourly }
         set(newValue) {
-            if newValue.rawValue <= 3 {
+            if newValue.rawValue <= Job.payTypeCount {
                 self.storedPayType = Int16(newValue.rawValue)
             }
         }
     }
     
-    enum PayType: Int {
+    enum PayType: Int, CaseIterable {
         case salary = 1
         case hourly = 2
         case shift = 3
+        case unpaid = 4
     }
 }
