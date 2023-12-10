@@ -8,14 +8,35 @@
 import SwiftUI
 
 struct ContentView: View {
+    @FetchRequest(sortDescriptors: []) var jobs: FetchedResults<Job>
+    @Environment(\.managedObjectContext) var moc
+    @State var navigationPath = NavigationPath()
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack(path: $navigationPath) {
+            List {
+                ForEach(jobs) { job in
+                    NavigationLink(value: job) {
+                        HStack {
+                            Text(job.name ?? "Unknown job")
+                            Spacer()
+                            Text("Hours")
+                                .foregroundStyle(.secondary)
+                        }
+                    }
+                }
+                .navigationDestination(for: Job.self) { job in
+                    Text(job.name ?? "No name")
+                }
+            }
+            .toolbar {
+                Button("Add", systemImage: "plus") {
+                    let job = Job(context: moc)
+                    job.name = "New Job"
+                }
+            }
+            .navigationTitle("Jobs")
         }
-        .padding()
     }
 }
 
