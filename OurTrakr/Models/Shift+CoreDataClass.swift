@@ -10,6 +10,6 @@ import CoreData
 import Foundation
 
 @objc(Shift)
-public class Shift: NSManagedObject {
+public class Shift: NSManagedObject, Identifiable {
 
 }
