@@ -6,6 +6,7 @@ included:
 # Excluded paths
 excluded:
   - Carthage
+  - OurTrakr/Models
 
 
 # Opt-in rules
