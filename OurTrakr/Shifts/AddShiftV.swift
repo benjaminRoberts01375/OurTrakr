@@ -8,7 +8,28 @@
 import SwiftUI
 
 struct AddShiftV: View {
+    @ObservedObject var job: FetchedResults<Job>.Element
+    @Environment(\.managedObjectContext) var moc
+    @Environment(\.dismiss) var dismiss
+    
     var body: some View {
-        /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Hello, world!@*/Text("Hello, world!")/*@END_MENU_TOKEN@*/
+        NavigationStack {
+            Text("Placeholder")
+                .navigationTitle("New Shift")
+                .toolbar {
+                    ToolbarItem(placement: .cancellationAction) {
+                        Button("Cancel") {
+                            dismiss()
+                        }
+                    }
+                    ToolbarItem(placement: .confirmationAction) {
+                        Button("Add") {
+                            let newShift = Shift(context: moc)
+                            newShift.job = job
+                            dismiss()
+                        }
+                    }
+                }
+        }
     }
 }

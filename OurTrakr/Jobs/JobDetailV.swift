@@ -10,6 +10,7 @@ import SwiftUI
 struct JobDetailV: View {
     @ObservedObject var job: FetchedResults<Job>.Element
     @Environment(\.managedObjectContext) var moc
+    @State var addingJob = false
     
     var body: some View {
         List(Array(job.unwrappedShifts)) { shift in
@@ -17,12 +18,8 @@ struct JobDetailV: View {
         }
         .navigationTitle("\(job.unwrappedName) Shifts")
         .toolbar {
-            Button("Add", systemImage: "plus") {
-                let shift = Shift(context: moc)
-                shift.job = job
-                shift.start = Date() // Temp
-                shift.end = Date() // Temp
-            }
+            Button("Add", systemImage: "plus") { addingJob = true }
         }
+        .sheet(isPresented: $addingJob) { AddShiftV(job: job) }
     }
 }
