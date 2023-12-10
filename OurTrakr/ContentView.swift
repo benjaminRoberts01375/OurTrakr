@@ -20,15 +20,15 @@ struct ContentView: View {
                         JobListItemV(job: job)
                     }
                 }
-                .navigationDestination(for: Job.self) { JobDetailV(job: $0) }
             }
+            .navigationTitle("Jobs")
+            .navigationDestination(for: Job.self) { JobDetailV(job: $0) }
             .toolbar {
                 Button("Add", systemImage: "plus") {
                     let job = Job(context: moc)
                     job.name = "New Job"
                 }
             }
-            .navigationTitle("Jobs")
         }
     }
 }
