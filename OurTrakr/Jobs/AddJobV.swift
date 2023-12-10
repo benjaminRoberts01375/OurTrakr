@@ -90,6 +90,12 @@ struct AddJobV: View {
         .onChange(of: jobName) { _ in
             validJob = checkValidJob()
         }
+        .onChange(of: payPerType) { _ in
+            validJob = checkValidJob()
+        }
+        .onChange(of: shiftDuration) { _ in
+            validJob = checkValidJob()
+        }
     }
     
     func checkValidJob() -> Bool {
