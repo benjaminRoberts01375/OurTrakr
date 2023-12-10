@@ -13,6 +13,7 @@
 		07AB10C52B25812300817888 /* Job+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AB10C12B25812300817888 /* Job+CoreDataProperties.swift */; };
 		07AB10C62B25812300817888 /* Shift+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AB10C22B25812300817888 /* Shift+CoreDataClass.swift */; };
 		07AB10C82B25816E00817888 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AB10C72B25816E00817888 /* DataController.swift */; };
+		07AB10CB2B258B1A00817888 /* JobListItemV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AB10CA2B258B1A00817888 /* JobListItemV.swift */; };
 		07C448BB2B257A8700AA0FA8 /* OurTrakrApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C448BA2B257A8700AA0FA8 /* OurTrakrApp.swift */; };
 		07C448BD2B257A8700AA0FA8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C448BC2B257A8700AA0FA8 /* ContentView.swift */; };
 		07C448BF2B257A8900AA0FA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07C448BE2B257A8900AA0FA8 /* Assets.xcassets */; };
@@ -27,6 +28,7 @@
 		07AB10C12B25812300817888 /* Job+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Job+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		07AB10C22B25812300817888 /* Shift+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Shift+CoreDataClass.swift"; sourceTree = "<group>"; };
 		07AB10C72B25816E00817888 /* DataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		07AB10CA2B258B1A00817888 /* JobListItemV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobListItemV.swift; sourceTree = "<group>"; };
 		07C448B72B257A8700AA0FA8 /* OurTrakr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OurTrakr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07C448BA2B257A8700AA0FA8 /* OurTrakrApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OurTrakrApp.swift; sourceTree = "<group>"; };
 		07C448BC2B257A8700AA0FA8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -62,6 +64,14 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		07AB10C92B258B0900817888 /* Jobs */ = {
+			isa = PBXGroup;
+			children = (
+				07AB10CA2B258B1A00817888 /* JobListItemV.swift */,
+			);
+			path = Jobs;
+			sourceTree = "<group>";
+		};
 		07C448AE2B257A8700AA0FA8 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +95,7 @@
 			children = (
 				07C448BA2B257A8700AA0FA8 /* OurTrakrApp.swift */,
 				07C448BC2B257A8700AA0FA8 /* ContentView.swift */,
+				07AB10C92B258B0900817888 /* Jobs */,
 				07AB10BE2B2580DE00817888 /* Models */,
 				07C448BE2B257A8900AA0FA8 /* Assets.xcassets */,
 				07C448C02B257A8900AA0FA8 /* Preview Content */,
@@ -236,6 +247,7 @@
 				07AB10C32B25812300817888 /* Job+CoreDataClass.swift in Sources */,
 				07C448BB2B257A8700AA0FA8 /* OurTrakrApp.swift in Sources */,
 				07AB10C42B25812300817888 /* Shift+CoreDataProperties.swift in Sources */,
+				07AB10CB2B258B1A00817888 /* JobListItemV.swift in Sources */,
 				07AB10B22B257FC200817888 /* OurTrakr.xcdatamodeld in Sources */,
 				07AB10C82B25816E00817888 /* DataController.swift in Sources */,
 				07AB10C62B25812300817888 /* Shift+CoreDataClass.swift in Sources */,

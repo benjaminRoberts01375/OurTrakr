@@ -17,12 +17,7 @@ struct ContentView: View {
             List {
                 ForEach(jobs) { job in
                     NavigationLink(value: job) {
-                        HStack {
-                            Text(job.name ?? "Unknown job")
-                            Spacer()
-                            Text("Hours")
-                                .foregroundStyle(.secondary)
-                        }
+                        JobListItemV(job: job)
                     }
                 }
                 .navigationDestination(for: Job.self) { job in
