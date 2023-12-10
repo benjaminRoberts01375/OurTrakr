@@ -65,6 +65,7 @@ struct AddJobV: View {
                         let newJob = Job(context: moc)
                         newJob.name = jobName
                         newJob.payType = payType
+                        newJob.payPerPayType = Double(payPerType) ?? 0
                         dismiss()
                     }
                     .disabled(!validJob)
@@ -86,9 +87,8 @@ struct AddJobV: View {
     }
     
     func checkValidJob() -> Bool {
-        if jobName.isEmpty {
-            return false
-        }
+        if jobName.isEmpty { return false }
+        if showWageField && !payPerType.isNumber { return false }
         return true
     }
 }
