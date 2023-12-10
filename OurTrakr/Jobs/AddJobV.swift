@@ -76,6 +76,10 @@ struct AddJobV: View {
                     }
                     .disabled(!validJob)
                 }
+                ToolbarItem(placement: .principal) {
+                    Text(jobName.isEmpty ? "New Job" : jobName)
+                        .fontWeight(.bold)
+                }
             }
         }
         .onChange(of: payType) { _ in
