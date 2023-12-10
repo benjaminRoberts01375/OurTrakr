@@ -16,6 +16,7 @@ extension Job {
     }
 
     @NSManaged public var name: String?
+    @NSManaged public var storedPayType: Int16
     @NSManaged public var shifts: NSSet?
 
 }
