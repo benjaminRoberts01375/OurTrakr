@@ -11,5 +11,10 @@ import Foundation
 
 @objc(Job)
 public class Job: NSManagedObject, Identifiable {
-
+    static let defaultName = "New Job"
+    
+    var unwrappedName: String {
+        get { self.name ?? Job.defaultName }
+        set(newValue) { self.name = newValue }
+    }
 }
