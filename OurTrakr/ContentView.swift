@@ -20,9 +20,7 @@ struct ContentView: View {
                         JobListItemV(job: job)
                     }
                 }
-                .navigationDestination(for: Job.self) { job in
-                    Text(job.name ?? "No name")
-                }
+                .navigationDestination(for: Job.self) { JobDetailV(job: $0) }
             }
             .toolbar {
                 Button("Add", systemImage: "plus") {
