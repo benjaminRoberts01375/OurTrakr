@@ -16,6 +16,7 @@
 		07AB10CB2B258B1A00817888 /* JobListItemV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AB10CA2B258B1A00817888 /* JobListItemV.swift */; };
 		07AB10CD2B258B6E00817888 /* JobDetailV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AB10CC2B258B6E00817888 /* JobDetailV.swift */; };
 		07AB10D22B2593AE00817888 /* AddShiftV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AB10D12B2593AE00817888 /* AddShiftV.swift */; };
+		07AB10D52B26180200817888 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AB10D42B26180200817888 /* Date.swift */; };
 		07C448BB2B257A8700AA0FA8 /* OurTrakrApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C448BA2B257A8700AA0FA8 /* OurTrakrApp.swift */; };
 		07C448BD2B257A8700AA0FA8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C448BC2B257A8700AA0FA8 /* ContentView.swift */; };
 		07C448BF2B257A8900AA0FA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07C448BE2B257A8900AA0FA8 /* Assets.xcassets */; };
@@ -33,6 +34,7 @@
 		07AB10CA2B258B1A00817888 /* JobListItemV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobListItemV.swift; sourceTree = "<group>"; };
 		07AB10CC2B258B6E00817888 /* JobDetailV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobDetailV.swift; sourceTree = "<group>"; };
 		07AB10D12B2593AE00817888 /* AddShiftV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddShiftV.swift; sourceTree = "<group>"; };
+		07AB10D42B26180200817888 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		07C448B72B257A8700AA0FA8 /* OurTrakr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OurTrakr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07C448BA2B257A8700AA0FA8 /* OurTrakrApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OurTrakrApp.swift; sourceTree = "<group>"; };
 		07C448BC2B257A8700AA0FA8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -85,6 +87,14 @@
 			path = Shifts;
 			sourceTree = "<group>";
 		};
+		07AB10D32B2617EC00817888 /* Non-OurTrakr Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				07AB10D42B26180200817888 /* Date.swift */,
+			);
+			path = "Non-OurTrakr Extensions";
+			sourceTree = "<group>";
+		};
 		07C448AE2B257A8700AA0FA8 = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +121,7 @@
 				07AB10C92B258B0900817888 /* Jobs */,
 				07AB10D02B2593A100817888 /* Shifts */,
 				07AB10BE2B2580DE00817888 /* Models */,
+				07AB10D32B2617EC00817888 /* Non-OurTrakr Extensions */,
 				07C448BE2B257A8900AA0FA8 /* Assets.xcassets */,
 				07C448C02B257A8900AA0FA8 /* Preview Content */,
 			);
@@ -264,6 +275,7 @@
 				07AB10CD2B258B6E00817888 /* JobDetailV.swift in Sources */,
 				07AB10CB2B258B1A00817888 /* JobListItemV.swift in Sources */,
 				07AB10B22B257FC200817888 /* OurTrakr.xcdatamodeld in Sources */,
+				07AB10D52B26180200817888 /* Date.swift in Sources */,
 				07AB10C82B25816E00817888 /* DataController.swift in Sources */,
 				07AB10D22B2593AE00817888 /* AddShiftV.swift in Sources */,
 				07AB10C62B25812300817888 /* Shift+CoreDataClass.swift in Sources */,
