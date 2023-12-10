@@ -18,6 +18,7 @@
 		07AB10D52B26180200817888 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AB10D42B26180200817888 /* Date.swift */; };
 		07AB10D92B261CDD00817888 /* Job+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AB10D82B261CDC00817888 /* Job+CoreDataProperties.swift */; };
 		07AB10DB2B261D7000817888 /* AddJobV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AB10DA2B261D7000817888 /* AddJobV.swift */; };
+		07AB10DD2B26351C00817888 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AB10DC2B26351C00817888 /* String.swift */; };
 		07C448BB2B257A8700AA0FA8 /* OurTrakrApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C448BA2B257A8700AA0FA8 /* OurTrakrApp.swift */; };
 		07C448BD2B257A8700AA0FA8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C448BC2B257A8700AA0FA8 /* ContentView.swift */; };
 		07C448BF2B257A8900AA0FA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07C448BE2B257A8900AA0FA8 /* Assets.xcassets */; };
@@ -37,6 +38,7 @@
 		07AB10D42B26180200817888 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		07AB10D82B261CDC00817888 /* Job+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Job+CoreDataProperties.swift"; path = "/Users/benroberts/Desktop/OurTrakr/OurTrakr/Models/Job+CoreDataProperties.swift"; sourceTree = "<absolute>"; };
 		07AB10DA2B261D7000817888 /* AddJobV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddJobV.swift; sourceTree = "<group>"; };
+		07AB10DC2B26351C00817888 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		07C448B72B257A8700AA0FA8 /* OurTrakr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OurTrakr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07C448BA2B257A8700AA0FA8 /* OurTrakrApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OurTrakrApp.swift; sourceTree = "<group>"; };
 		07C448BC2B257A8700AA0FA8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				07AB10D42B26180200817888 /* Date.swift */,
+				07AB10DC2B26351C00817888 /* String.swift */,
 			);
 			path = "Non-OurTrakr Extensions";
 			sourceTree = "<group>";
@@ -275,6 +278,7 @@
 				07AB10C32B25812300817888 /* Job+CoreDataClass.swift in Sources */,
 				07C448BB2B257A8700AA0FA8 /* OurTrakrApp.swift in Sources */,
 				07AB10C42B25812300817888 /* Shift+CoreDataProperties.swift in Sources */,
+				07AB10DD2B26351C00817888 /* String.swift in Sources */,
 				07AB10CD2B258B6E00817888 /* JobDetailV.swift in Sources */,
 				07AB10D92B261CDD00817888 /* Job+CoreDataProperties.swift in Sources */,
 				07AB10CB2B258B1A00817888 /* JobListItemV.swift in Sources */,
