@@ -17,4 +17,8 @@ public class Job: NSManagedObject, Identifiable {
         get { self.name ?? Job.defaultName }
         set(newValue) { self.name = newValue }
     }
+    
+    var unwrappedShifts: Set<Shift> {
+        self.shifts as? Set<Shift> ?? []
+    }
 }
