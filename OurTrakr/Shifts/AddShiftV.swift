@@ -11,15 +11,16 @@ struct AddShiftV: View {
     @ObservedObject var job: FetchedResults<Job>.Element
     @Environment(\.managedObjectContext) private var moc
     @Environment(\.dismiss) private var dismiss
-    @State var startTime: Date = Date.now.addingTimeInterval(-14400)
-    @State var endTime: Date = Date()
+    @State private var startTime: Date = Date.now.addingTimeInterval(-14400)
+    @State private var endTime: Date = Date()
+    @State private var allowedShift: Bool = true
     
     var body: some View {
         NavigationStack {
             Form {
                 Section("Shift Times") {
-                    DatePicker("Start time", selection: $startTime)
-                    DatePicker("End time", selection: $endTime)
+                    DatePicker("Started", selection: $startTime)
+                    DatePicker("Ended", selection: $endTime)
                 }
             }
             .toolbar {
@@ -32,10 +33,14 @@ struct AddShiftV: View {
                     Button("Add") {
                         let newShift = Shift(context: moc)
                         newShift.job = job
+                        newShift.start = startTime
+                        newShift.end = endTime
                         dismiss()
                     }
+                    .disabled(!allowedShift)
                 }
             }
         }
+        .onChange(of: startTime) { allowedShift = $0 < endTime }
     }
 }
