@@ -15,6 +15,7 @@ struct AddJobV: View {
     @State private var payType: Job.PayType = .hourly
     @State private var showWageField: Bool = true
     @State private var payPerType: String = ""
+    @State private var shiftDuration: String = ""
     private let currencySymbol = Locale.current.currencySymbol ?? "$"
     
     var body: some View {
@@ -49,6 +50,13 @@ struct AddJobV: View {
                             }
                         }
                         .keyboardType(.decimalPad)
+                    }
+                }
+                Section(header: Text("Typical")) {
+                    HStack {
+                        TextField("Shift Duration", text: $shiftDuration, prompt: Text("Shift Duration"))
+                            .keyboardType(.decimalPad)
+                        Text("hrs / Shift")
                     }
                 }
             }
@@ -87,6 +95,8 @@ struct AddJobV: View {
     func checkValidJob() -> Bool {
         if jobName.isEmpty { return false }
         if showWageField && !payPerType.isNumber { return false }
+        if !shiftDuration.isNumber { return false }
+        if Double(shiftDuration) ?? .zero < .zero { return false }
         return true
     }
 }
