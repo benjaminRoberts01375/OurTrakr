@@ -32,25 +32,23 @@ struct AddJobV: View {
                     }
                     .pickerStyle(.menu)
                     if showWageField {
-                        HStack {
+                        HStack(spacing: 0) {
                             Text(currencySymbol)
                             switch payType {
                             case .salary:
-                                TextField(currencySymbol, text: $payPerType, prompt: Text("Yearly Rate"))
-                                    .keyboardType(.numberPad)
+                                TextField(currencySymbol, text: $payPerType, prompt: Text(" Yearly Rate"))
                                 Text(" / yr")
                             case .hourly:
-                                TextField(currencySymbol, text: $payPerType, prompt: Text("Hourly Rate"))
-                                    .keyboardType(.numberPad)
+                                TextField(currencySymbol, text: $payPerType, prompt: Text(" Hourly Rate"))
                                 Text(" / hr")
                             case .shift:
-                                TextField(currencySymbol, text: $payPerType, prompt: Text("Shift Rate"))
-                                    .keyboardType(.numberPad)
+                                TextField(currencySymbol, text: $payPerType, prompt: Text(" Shift Rate"))
                                 Text(" / shift")
                             case .unpaid:
                                 EmptyView()
                             }
                         }
+                        .keyboardType(.decimalPad)
                     }
                 }
             }
