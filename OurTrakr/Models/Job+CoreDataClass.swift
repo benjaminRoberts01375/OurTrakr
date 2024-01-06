@@ -19,6 +19,8 @@ public class Job: NSManagedObject, Identifiable {
         set(newValue) { self.name = newValue }
     }
     
+    public var unwrappedPayPeriods: Set<PayPeriod> { self.payPeriods as? Set<PayPeriod> ?? [] }
+    
     var payType: PayType {
         get { PayType(rawValue: Int(self.storedPayType)) ?? .hourly }
         set(newValue) {
