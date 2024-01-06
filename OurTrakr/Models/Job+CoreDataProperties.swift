@@ -2,7 +2,7 @@
 //  Job+CoreDataProperties.swift
 //  
 //
-//  Created by Ben Roberts on 12/10/23.
+//  Created by Ben Roberts on 1/6/24.
 //
 //
 
@@ -16,27 +16,27 @@ extension Job {
     }
 
     @NSManaged public var name: String?
-    @NSManaged public var storedPayType: Int16
     @NSManaged public var payPerPayType: Double
-    @NSManaged public var typicalShiftDurationSeconds: Int32
+    @NSManaged public var storedPayType: Int16
     @NSManaged public var totalWorkingHours: Double
-    @NSManaged public var shifts: NSSet?
+    @NSManaged public var typicalShiftDurationSeconds: Int32
+    @NSManaged public var payPeriods: NSSet?
 
 }
 
-// MARK: Generated accessors for shifts
+// MARK: Generated accessors for payPeriods
 extension Job {
 
-    @objc(addShiftsObject:)
-    @NSManaged public func addToShifts(_ value: Shift)
+    @objc(addPayPeriodsObject:)
+    @NSManaged public func addToPayPeriods(_ value: PayPeriod)
 
-    @objc(removeShiftsObject:)
-    @NSManaged public func removeFromShifts(_ value: Shift)
+    @objc(removePayPeriodsObject:)
+    @NSManaged public func removeFromPayPeriods(_ value: PayPeriod)
 
-    @objc(addShifts:)
-    @NSManaged public func addToShifts(_ values: NSSet)
+    @objc(addPayPeriods:)
+    @NSManaged public func addToPayPeriods(_ values: NSSet)
 
-    @objc(removeShifts:)
-    @NSManaged public func removeFromShifts(_ values: NSSet)
+    @objc(removePayPeriods:)
+    @NSManaged public func removeFromPayPeriods(_ values: NSSet)
 
 }

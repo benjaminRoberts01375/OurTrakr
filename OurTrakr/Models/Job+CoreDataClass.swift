@@ -19,10 +19,6 @@ public class Job: NSManagedObject, Identifiable {
         set(newValue) { self.name = newValue }
     }
     
-    var unwrappedShifts: Set<Shift> {
-        self.shifts as? Set<Shift> ?? []
-    }
-    
     var payType: PayType {
         get { PayType(rawValue: Int(self.storedPayType)) ?? .hourly }
         set(newValue) {

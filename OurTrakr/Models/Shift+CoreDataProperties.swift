@@ -2,7 +2,7 @@
 //  Shift+CoreDataProperties.swift
 //  
 //
-//  Created by Ben Roberts on 12/10/23.
+//  Created by Ben Roberts on 1/6/24.
 //
 //
 
@@ -15,8 +15,8 @@ extension Shift {
         return NSFetchRequest<Shift>(entityName: "Shift")
     }
 
-    @NSManaged public var start: Date?
     @NSManaged public var end: Date?
-    @NSManaged public var job: Job?
+    @NSManaged public var start: Date?
+    @NSManaged public var payPeriod: PayPeriod?
 
 }

@@ -13,13 +13,15 @@ struct JobDetailV: View {
     @State var addingJob = false
     
     var body: some View {
-        List(Array(job.unwrappedShifts)) { shift in
-            Text("\(shift.start ?? Date())")
-        }
-        .navigationTitle("\(job.unwrappedName) Shifts")
-        .toolbar {
-            Button("Add", systemImage: "plus") { addingJob = true }
-        }
-        .sheet(isPresented: $addingJob) { AddShiftV(job: job) }
+        EmptyView()
+//        List(Array(job.unwrappedShifts)) { shift in
+//            Text(shift.formattedDuration)
+//            Text(shift.start?.dateSlash ?? "")
+//        }
+//        .navigationTitle("\(job.unwrappedName) Pay Periods")
+//        .toolbar {
+//            Button("Add", systemImage: "plus") { addingJob = true }
+//        }
+//        .sheet(isPresented: $addingJob) { AddShiftV(job: job) }
     }
 }

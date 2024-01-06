@@ -43,7 +43,7 @@ struct AddShiftV: View {
                 ToolbarItem(placement: .confirmationAction) {
                     Button("Add") {
                         let newShift = Shift(context: moc)
-                        newShift.job = job
+//                        newShift.job = job
                         newShift.start = startTime
                         newShift.end = endTime
                         dismiss()
