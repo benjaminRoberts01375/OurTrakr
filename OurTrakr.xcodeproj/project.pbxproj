@@ -28,6 +28,7 @@
 		B5F4C8412B49F9F100D1AE76 /* Shift+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F4C83E2B49F9F100D1AE76 /* Shift+CoreDataProperties.swift */; };
 		B5F4C8422B49F9F100D1AE76 /* PayPeriod+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F4C83F2B49F9F100D1AE76 /* PayPeriod+CoreDataProperties.swift */; };
 		B5F4C8442B4A03C900D1AE76 /* ShiftListItemV.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F4C8432B4A03C900D1AE76 /* ShiftListItemV.swift */; };
+		B5F4C8462B4A08B200D1AE76 /* PayPeriodListItemV.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F4C8452B4A08B200D1AE76 /* PayPeriodListItemV.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		B5F4C83E2B49F9F100D1AE76 /* Shift+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Shift+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		B5F4C83F2B49F9F100D1AE76 /* PayPeriod+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PayPeriod+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		B5F4C8432B4A03C900D1AE76 /* ShiftListItemV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShiftListItemV.swift; sourceTree = "<group>"; };
+		B5F4C8452B4A08B200D1AE76 /* PayPeriodListItemV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayPeriodListItemV.swift; sourceTree = "<group>"; };
 		F57412C1E27CB51E876530FD /* Pods-OurTrakr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OurTrakr.release.xcconfig"; path = "Target Support Files/Pods-OurTrakr/Pods-OurTrakr.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -183,6 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				B5F4C8262B49F30000D1AE76 /* PayPeriodDetailV.swift */,
+				B5F4C8452B4A08B200D1AE76 /* PayPeriodListItemV.swift */,
 			);
 			path = "Pay Period";
 			sourceTree = "<group>";
@@ -307,6 +310,7 @@
 				B5F4C8412B49F9F100D1AE76 /* Shift+CoreDataProperties.swift in Sources */,
 				07C448BB2B257A8700AA0FA8 /* OurTrakrApp.swift in Sources */,
 				07AB10DD2B26351C00817888 /* String.swift in Sources */,
+				B5F4C8462B4A08B200D1AE76 /* PayPeriodListItemV.swift in Sources */,
 				07AB10CD2B258B6E00817888 /* JobDetailV.swift in Sources */,
 				B5F4C83B2B49F8A100D1AE76 /* PayPeriod+CoreDataClass.swift in Sources */,
 				07AB10CB2B258B1A00817888 /* JobListItemV.swift in Sources */,
