@@ -24,7 +24,7 @@ struct ContentView: View {
                 }
             }
             .navigationTitle(ContentView.title)
-            .navigationDestination(for: Job.self) { JobDetailV(job: $0) }
+            .navigationDestination(for: Job.self) { JobDetailV(job: $0, navigationPath: $navigationPath) }
             .toolbar {
                 Button("Add", systemImage: "plus") {
                     addingJob = true

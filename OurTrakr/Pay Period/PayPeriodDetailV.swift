@@ -9,9 +9,15 @@ import SwiftUI
 
 struct PayPeriodDetailV: View {
     @ObservedObject var payPeriod: FetchedResults<PayPeriod>.Element
+    @Binding var navigationPath: NavigationPath
     
     var body: some View {
-        EmptyView()
-        //        List(Array())
+        List(Array(payPeriod.unwrappedShifts)) { shift in
+            if shift.start != nil {
+                NavigationLink(value: shift) { ShiftListItemV(shift: shift) }
+            }
+        }
+        .navigationTitle(payPeriod.job?.unwrappedName ?? "Shifts")
+        .navigationDestination(for: Job.self) { JobDetailV(job: $0, navigationPath: $navigationPath) }
     }
 }

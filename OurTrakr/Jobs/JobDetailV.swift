@@ -11,9 +11,18 @@ struct JobDetailV: View {
     @ObservedObject var job: FetchedResults<Job>.Element
     @Environment(\.managedObjectContext) var moc
     @State var addingJob = false
+    @Binding var navigationPath: NavigationPath
     
     var body: some View {
-        EmptyView()
+        List(Array(job.unwrappedPayPeriods)) { payPeriod in
+            if let startDate = payPeriod.start {
+                NavigationLink(value: payPeriod) {
+                    PayPeriodListItemV(payPeriod: payPeriod)
+                }
+            }
+        }
+        .navigationTitle("\(job.unwrappedName) Pay Periods")
+        .navigationDestination(for: PayPeriod.self) { PayPeriodDetailV(payPeriod: $0, navigationPath: $navigationPath) }
 //        List(Array(job.unwrappedShifts)) { shift in
 //            Text(shift.formattedDuration)
 //            Text(shift.start?.dateSlash ?? "")
