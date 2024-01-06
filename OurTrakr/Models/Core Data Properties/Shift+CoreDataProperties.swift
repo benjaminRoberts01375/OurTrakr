@@ -6,8 +6,9 @@
 //
 //
 
-import CoreData
 import Foundation
+import CoreData
+
 
 extension Shift {
 

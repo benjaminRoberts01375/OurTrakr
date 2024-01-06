@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		07AB10B22B257FC200817888 /* OurTrakr.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 07AB10B02B257FC200817888 /* OurTrakr.xcdatamodeld */; };
-		07AB10C32B25812300817888 /* Job+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AB10BF2B25812200817888 /* Job+CoreDataClass.swift */; };
-		07AB10C62B25812300817888 /* Shift+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AB10C22B25812300817888 /* Shift+CoreDataClass.swift */; };
 		07AB10C82B25816E00817888 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AB10C72B25816E00817888 /* DataController.swift */; };
 		07AB10CB2B258B1A00817888 /* JobListItemV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AB10CA2B258B1A00817888 /* JobListItemV.swift */; };
 		07AB10CD2B258B6E00817888 /* JobDetailV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AB10CC2B258B6E00817888 /* JobDetailV.swift */; };
@@ -22,16 +20,17 @@
 		07C448BF2B257A8900AA0FA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07C448BE2B257A8900AA0FA8 /* Assets.xcassets */; };
 		07C448C22B257A8900AA0FA8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07C448C12B257A8900AA0FA8 /* Preview Assets.xcassets */; };
 		996B12668F47FFDA3D0D1480 /* Pods_OurTrakr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B49E0DAF9F382E093239DD7E /* Pods_OurTrakr.framework */; };
-		B5F4C8212B49F1B600D1AE76 /* Job+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F4C81E2B49F1B600D1AE76 /* Job+CoreDataProperties.swift */; };
-		B5F4C8222B49F1B600D1AE76 /* Shift+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F4C8202B49F1B600D1AE76 /* Shift+CoreDataProperties.swift */; };
-		B5F4C8232B49F1B600D1AE76 /* PayPeriod+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F4C81F2B49F1B600D1AE76 /* PayPeriod+CoreDataProperties.swift */; };
-		B5F4C8242B49F1B600D1AE76 /* PayPeriod+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F4C81D2B49F1B600D1AE76 /* PayPeriod+CoreDataClass.swift */; };
+		B5F4C8272B49F30000D1AE76 /* PayPeriodDetailV.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F4C8262B49F30000D1AE76 /* PayPeriodDetailV.swift */; };
+		B5F4C8392B49F8A100D1AE76 /* Shift+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F4C8362B49F8A000D1AE76 /* Shift+CoreDataClass.swift */; };
+		B5F4C83A2B49F8A100D1AE76 /* Job+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F4C8372B49F8A000D1AE76 /* Job+CoreDataClass.swift */; };
+		B5F4C83B2B49F8A100D1AE76 /* PayPeriod+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F4C8382B49F8A000D1AE76 /* PayPeriod+CoreDataClass.swift */; };
+		B5F4C8402B49F9F100D1AE76 /* Job+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F4C83D2B49F9F100D1AE76 /* Job+CoreDataProperties.swift */; };
+		B5F4C8412B49F9F100D1AE76 /* Shift+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F4C83E2B49F9F100D1AE76 /* Shift+CoreDataProperties.swift */; };
+		B5F4C8422B49F9F100D1AE76 /* PayPeriod+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F4C83F2B49F9F100D1AE76 /* PayPeriod+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		07AB10B12B257FC200817888 /* OurTrakr.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OurTrakr.xcdatamodel; sourceTree = "<group>"; };
-		07AB10BF2B25812200817888 /* Job+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Job+CoreDataClass.swift"; sourceTree = "<group>"; };
-		07AB10C22B25812300817888 /* Shift+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Shift+CoreDataClass.swift"; sourceTree = "<group>"; };
 		07AB10C72B25816E00817888 /* DataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		07AB10CA2B258B1A00817888 /* JobListItemV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobListItemV.swift; sourceTree = "<group>"; };
 		07AB10CC2B258B6E00817888 /* JobDetailV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobDetailV.swift; sourceTree = "<group>"; };
@@ -46,10 +45,13 @@
 		07C448C12B257A8900AA0FA8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		11399129BFFD33295D1592D8 /* Pods-OurTrakr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OurTrakr.debug.xcconfig"; path = "Target Support Files/Pods-OurTrakr/Pods-OurTrakr.debug.xcconfig"; sourceTree = "<group>"; };
 		B49E0DAF9F382E093239DD7E /* Pods_OurTrakr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OurTrakr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B5F4C81D2B49F1B600D1AE76 /* PayPeriod+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "PayPeriod+CoreDataClass.swift"; path = "/Users/ben/Desktop/OurTrakr/OurTrakr/Models/PayPeriod+CoreDataClass.swift"; sourceTree = "<absolute>"; };
-		B5F4C81E2B49F1B600D1AE76 /* Job+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Job+CoreDataProperties.swift"; path = "/Users/ben/Desktop/OurTrakr/OurTrakr/Models/Job+CoreDataProperties.swift"; sourceTree = "<absolute>"; };
-		B5F4C81F2B49F1B600D1AE76 /* PayPeriod+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "PayPeriod+CoreDataProperties.swift"; path = "/Users/ben/Desktop/OurTrakr/OurTrakr/Models/PayPeriod+CoreDataProperties.swift"; sourceTree = "<absolute>"; };
-		B5F4C8202B49F1B600D1AE76 /* Shift+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Shift+CoreDataProperties.swift"; path = "/Users/ben/Desktop/OurTrakr/OurTrakr/Models/Shift+CoreDataProperties.swift"; sourceTree = "<absolute>"; };
+		B5F4C8262B49F30000D1AE76 /* PayPeriodDetailV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayPeriodDetailV.swift; sourceTree = "<group>"; };
+		B5F4C8362B49F8A000D1AE76 /* Shift+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Shift+CoreDataClass.swift"; sourceTree = "<group>"; };
+		B5F4C8372B49F8A000D1AE76 /* Job+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Job+CoreDataClass.swift"; sourceTree = "<group>"; };
+		B5F4C8382B49F8A000D1AE76 /* PayPeriod+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PayPeriod+CoreDataClass.swift"; sourceTree = "<group>"; };
+		B5F4C83D2B49F9F100D1AE76 /* Job+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Job+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		B5F4C83E2B49F9F100D1AE76 /* Shift+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Shift+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		B5F4C83F2B49F9F100D1AE76 /* PayPeriod+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PayPeriod+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		F57412C1E27CB51E876530FD /* Pods-OurTrakr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OurTrakr.release.xcconfig"; path = "Target Support Files/Pods-OurTrakr/Pods-OurTrakr.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -71,9 +73,9 @@
 				07AB10B02B257FC200817888 /* OurTrakr.xcdatamodeld */,
 				07AB10C72B25816E00817888 /* DataController.swift */,
 				B5F4C8252B49F25800D1AE76 /* Core Data Properties */,
-				07AB10BF2B25812200817888 /* Job+CoreDataClass.swift */,
-				B5F4C81D2B49F1B600D1AE76 /* PayPeriod+CoreDataClass.swift */,
-				07AB10C22B25812300817888 /* Shift+CoreDataClass.swift */,
+				B5F4C8372B49F8A000D1AE76 /* Job+CoreDataClass.swift */,
+				B5F4C8382B49F8A000D1AE76 /* PayPeriod+CoreDataClass.swift */,
+				B5F4C8362B49F8A000D1AE76 /* Shift+CoreDataClass.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -126,14 +128,15 @@
 		07C448B92B257A8700AA0FA8 /* OurTrakr */ = {
 			isa = PBXGroup;
 			children = (
-				07C448BA2B257A8700AA0FA8 /* OurTrakrApp.swift */,
+				07C448BE2B257A8900AA0FA8 /* Assets.xcassets */,
 				07C448BC2B257A8700AA0FA8 /* ContentView.swift */,
+				B5F4C83C2B49F94200D1AE76 /* Pay Period */,
 				07AB10C92B258B0900817888 /* Jobs */,
-				07AB10D02B2593A100817888 /* Shifts */,
 				07AB10BE2B2580DE00817888 /* Models */,
 				07AB10D32B2617EC00817888 /* Non-OurTrakr Extensions */,
-				07C448BE2B257A8900AA0FA8 /* Assets.xcassets */,
+				07C448BA2B257A8700AA0FA8 /* OurTrakrApp.swift */,
 				07C448C02B257A8900AA0FA8 /* Preview Content */,
+				07AB10D02B2593A100817888 /* Shifts */,
 			);
 			path = OurTrakr;
 			sourceTree = "<group>";
@@ -166,11 +169,19 @@
 		B5F4C8252B49F25800D1AE76 /* Core Data Properties */ = {
 			isa = PBXGroup;
 			children = (
-				B5F4C81E2B49F1B600D1AE76 /* Job+CoreDataProperties.swift */,
-				B5F4C81F2B49F1B600D1AE76 /* PayPeriod+CoreDataProperties.swift */,
-				B5F4C8202B49F1B600D1AE76 /* Shift+CoreDataProperties.swift */,
+				B5F4C83E2B49F9F100D1AE76 /* Shift+CoreDataProperties.swift */,
+				B5F4C83F2B49F9F100D1AE76 /* PayPeriod+CoreDataProperties.swift */,
+				B5F4C83D2B49F9F100D1AE76 /* Job+CoreDataProperties.swift */,
 			);
 			path = "Core Data Properties";
+			sourceTree = "<group>";
+		};
+		B5F4C83C2B49F94200D1AE76 /* Pay Period */ = {
+			isa = PBXGroup;
+			children = (
+				B5F4C8262B49F30000D1AE76 /* PayPeriodDetailV.swift */,
+			);
+			path = "Pay Period";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,21 +300,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				07C448BD2B257A8700AA0FA8 /* ContentView.swift in Sources */,
-				07AB10C32B25812300817888 /* Job+CoreDataClass.swift in Sources */,
+				B5F4C83A2B49F8A100D1AE76 /* Job+CoreDataClass.swift in Sources */,
+				B5F4C8412B49F9F100D1AE76 /* Shift+CoreDataProperties.swift in Sources */,
 				07C448BB2B257A8700AA0FA8 /* OurTrakrApp.swift in Sources */,
 				07AB10DD2B26351C00817888 /* String.swift in Sources */,
 				07AB10CD2B258B6E00817888 /* JobDetailV.swift in Sources */,
+				B5F4C83B2B49F8A100D1AE76 /* PayPeriod+CoreDataClass.swift in Sources */,
 				07AB10CB2B258B1A00817888 /* JobListItemV.swift in Sources */,
+				B5F4C8272B49F30000D1AE76 /* PayPeriodDetailV.swift in Sources */,
 				07AB10B22B257FC200817888 /* OurTrakr.xcdatamodeld in Sources */,
 				07AB10D52B26180200817888 /* Date.swift in Sources */,
 				07AB10C82B25816E00817888 /* DataController.swift in Sources */,
-				B5F4C8242B49F1B600D1AE76 /* PayPeriod+CoreDataClass.swift in Sources */,
-				B5F4C8232B49F1B600D1AE76 /* PayPeriod+CoreDataProperties.swift in Sources */,
-				B5F4C8212B49F1B600D1AE76 /* Job+CoreDataProperties.swift in Sources */,
-				B5F4C8222B49F1B600D1AE76 /* Shift+CoreDataProperties.swift in Sources */,
+				B5F4C8422B49F9F100D1AE76 /* PayPeriod+CoreDataProperties.swift in Sources */,
+				B5F4C8402B49F9F100D1AE76 /* Job+CoreDataProperties.swift in Sources */,
+				B5F4C8392B49F8A100D1AE76 /* Shift+CoreDataClass.swift in Sources */,
 				07AB10DB2B261D7000817888 /* AddJobV.swift in Sources */,
 				07AB10D22B2593AE00817888 /* AddShiftV.swift in Sources */,
-				07AB10C62B25812300817888 /* Shift+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
