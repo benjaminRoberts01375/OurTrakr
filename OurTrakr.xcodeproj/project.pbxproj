@@ -130,13 +130,13 @@
 			children = (
 				07C448BE2B257A8900AA0FA8 /* Assets.xcassets */,
 				07C448BC2B257A8700AA0FA8 /* ContentView.swift */,
-				B5F4C83C2B49F94200D1AE76 /* Pay Period */,
 				07AB10C92B258B0900817888 /* Jobs */,
+				07AB10D02B2593A100817888 /* Shifts */,
+				B5F4C83C2B49F94200D1AE76 /* Pay Period */,
 				07AB10BE2B2580DE00817888 /* Models */,
 				07AB10D32B2617EC00817888 /* Non-OurTrakr Extensions */,
 				07C448BA2B257A8700AA0FA8 /* OurTrakrApp.swift */,
 				07C448C02B257A8900AA0FA8 /* Preview Content */,
-				07AB10D02B2593A100817888 /* Shifts */,
 			);
 			path = OurTrakr;
 			sourceTree = "<group>";
