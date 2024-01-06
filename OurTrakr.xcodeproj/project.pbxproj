@@ -27,6 +27,7 @@
 		B5F4C8402B49F9F100D1AE76 /* Job+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F4C83D2B49F9F100D1AE76 /* Job+CoreDataProperties.swift */; };
 		B5F4C8412B49F9F100D1AE76 /* Shift+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F4C83E2B49F9F100D1AE76 /* Shift+CoreDataProperties.swift */; };
 		B5F4C8422B49F9F100D1AE76 /* PayPeriod+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F4C83F2B49F9F100D1AE76 /* PayPeriod+CoreDataProperties.swift */; };
+		B5F4C8442B4A03C900D1AE76 /* ShiftListItemV.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F4C8432B4A03C900D1AE76 /* ShiftListItemV.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		B5F4C83D2B49F9F100D1AE76 /* Job+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Job+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		B5F4C83E2B49F9F100D1AE76 /* Shift+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Shift+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		B5F4C83F2B49F9F100D1AE76 /* PayPeriod+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PayPeriod+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		B5F4C8432B4A03C900D1AE76 /* ShiftListItemV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShiftListItemV.swift; sourceTree = "<group>"; };
 		F57412C1E27CB51E876530FD /* Pods-OurTrakr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OurTrakr.release.xcconfig"; path = "Target Support Files/Pods-OurTrakr/Pods-OurTrakr.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -94,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				07AB10D12B2593AE00817888 /* AddShiftV.swift */,
+				B5F4C8432B4A03C900D1AE76 /* ShiftListItemV.swift */,
 			);
 			path = Shifts;
 			sourceTree = "<group>";
@@ -313,6 +316,7 @@
 				07AB10C82B25816E00817888 /* DataController.swift in Sources */,
 				B5F4C8422B49F9F100D1AE76 /* PayPeriod+CoreDataProperties.swift in Sources */,
 				B5F4C8402B49F9F100D1AE76 /* Job+CoreDataProperties.swift in Sources */,
+				B5F4C8442B4A03C900D1AE76 /* ShiftListItemV.swift in Sources */,
 				B5F4C8392B49F8A100D1AE76 /* Shift+CoreDataClass.swift in Sources */,
 				07AB10DB2B261D7000817888 /* AddJobV.swift in Sources */,
 				07AB10D22B2593AE00817888 /* AddShiftV.swift in Sources */,
