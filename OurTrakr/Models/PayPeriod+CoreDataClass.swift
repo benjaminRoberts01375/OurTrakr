@@ -11,5 +11,5 @@ import CoreData
 
 @objc(PayPeriod)
 public class PayPeriod: NSManagedObject {
-
+    var unwrappedShifts: Set<Shift> { self.shift as? Set<Shift> ?? [] }
 }
